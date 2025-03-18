@@ -1,0 +1,392 @@
+body {
+  background: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  max-width: 100%;
+}
+.pt-sans-regular {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-sans-bold {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pt-sans-regular-italic {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pt-sans-bold-italic {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.hero,
+.heros {
+  min-height: calc(100vh - 70px);
+  padding: 30px;
+  margin-top: 52px;
+}
+
+.hero p {
+  margin: 20px 20px;
+}
+
+.heros p {
+  margin: 20px 200px;
+}
+
+.heros ul {
+  margin: 20px 200px;
+}
+footer {
+  height: 280px;
+  /* margin-top: -50px; */
+  background-color: black;
+  padding: 15px 0;
+  color: white;
+}
+footer .social-links {
+  text-align: center;
+  margin-top: 30px;
+}
+footer .social-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin: 0 20px;
+  padding: 8px 14px;
+  transition: all 100ms ease-in-out;
+}
+footer .social-links a:hover {
+  color: white;
+  opacity: 0.6;
+  transition: all 100ms ease-in-out;
+}
+/* img {
+  width: 300px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+} */
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.fullscreen img {
+  max-width: 90vw;
+  max-height: 90vh;
+  height: auto;
+  width: auto;
+  transform: scale(1); /* Початковий масштаб */
+  transition: transform 0.1s ease-in-out;
+}
+
+h1 {
+  color: black;
+  font-size: 48px;
+}
+h2 {
+  color: black;
+  font-size: 36px;
+}
+h3 {
+  color: black;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+p {
+  color: black;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+}
+.number {
+  list-style-type: none;
+}
+.symbol {
+  margin-top: 20px;
+  padding: 0;
+}
+#shri {
+  opacity: 0;
+  transition: opacity 8s ease; /* Плавний перехід до повної видимості за 2 секунди */
+  margin: 36px auto;
+  padding: 0;
+  width: 26%;
+}
+ul {
+  list-style-type: none;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+}
+.myList li {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.myDiv {
+  margin-top: 20px;
+}
+
+.list {
+  list-style-type: circle;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+}
+.container-main {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.about-section {
+  text-align: center;
+}
+
+.media-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+.media-box p {
+  max-width: 400px;
+}
+.box {
+  background-color: #4e89ae;
+  color: #fff;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.boxes-wrapper {
+  padding: 10px 0;
+  /* Забираємо жорстку фіксацію height */
+  min-height: 170px; /* мінімальна висота для десктопу */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Тепер тримає позицію в потоці */
+  box-sizing: border-box;
+}
+
+.boxes-inner {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap; /* Дозволяє переносити бокси */
+  justify-content: center;
+  width: 100%;
+}
+.navigation-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.navigation-links a {
+  margin: 0 20px;
+}
+.primary-link {
+  color: var(--third-color);
+  padding: 15px;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+.primary-link:hover {
+  opacity: 0.7;
+}
+.secondary-link {
+  background: black;
+  text-transform: capitalize;
+  color: white;
+  padding: 20px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid var(--third-color);
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+.secondary-link:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+.email-link:hover {
+  text-decoration: underline;
+}
+.github {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 10px;
+  opacity: 0.5;
+  text-decoration: none;
+}
+.git {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 10px;
+  text-decoration: none;
+}
+.git:hover {
+  text-decoration: underline;
+}
+.navbar {
+  background-color: black;
+}
+nav {
+  padding: 0;
+}
+.navbar-toggler {
+  color: white !important;
+}
+.navbar-toggler-icon {
+  color: white !important;
+}
+.dropdown-menu {
+  background-color: black;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+.dropdown-menu li {
+  padding: 0;
+  margin: 0;
+}
+.dropdown-item {
+  padding: 0 10px !important;
+  margin: 0 !important;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  list-style-type: none;
+  line-height: 40px;
+  margin-left: 10px;
+  font-size: 18px;
+}
+nav a {
+  color: white !important;
+}
+nav a:hover,
+nav li.active a {
+  color: white !important;
+  background-color: black !important;
+  opacity: 0.7;
+  transition: all 100ms ease-in-out;
+}
+
+.logo {
+  max-height: 40px;
+}
+.gallery {
+  display: flex;
+  width: 100%;
+}
+
+.gallery img {
+  width: 33.33%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+@media (max-width: 768px) {
+  img {
+    width: 100%;
+  }
+  h3 {
+    margin: 0 20px 0 20px;
+  }
+  .media-box {
+    display: block;
+  }
+
+  nav li {
+    margin-left: 5px;
+    font-size: 13px;
+  }
+  .logo {
+    max-width: 50px;
+  }
+  .container-main img {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .outside-bg {
+    width: 100%;
+    vertical-align: middle;
+  }
+  .outside-bg-top {
+    width: 50%;
+    vertical-align: middle;
+  }
+  #shri {
+    width: 60%;
+    margin-top: 20px;
+  }
+  .symbol {
+    width: 50%;
+  }
+  .heros p {
+    margin: 10px 10px;
+  }
+  .heros ul {
+    margin: 0 10px;
+  }
+  .box {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto; /* Відступи і центрування */
+  }
+
+  .boxes-wrapper {
+    min-height: auto; /* Дозволяє займати місце за контентом */
+  }
+}
