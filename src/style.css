@@ -14,7 +14,11 @@ body {
   font-weight: 700;
   font-style: normal;
 }
-
+.white {
+  color: white;
+  padding: 10px 20px;
+  font-size: small;
+}
 .pt-sans-regular-italic {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -27,8 +31,7 @@ body {
   font-style: italic;
 }
 
-.hero,
-.heros {
+.hero {
   min-height: calc(100vh - 70px);
   padding: 30px;
   margin-top: 52px;
@@ -38,15 +41,8 @@ body {
   margin: 20px 20px;
 }
 
-.heros p {
-  margin: 20px 200px;
-}
-
-.heros ul {
-  margin: 20px 200px;
-}
 footer {
-  height: 280px;
+  height: 220px;
   /* margin-top: -50px; */
   background-color: black;
   padding: 15px 0;
@@ -124,17 +120,7 @@ p {
 .number {
   list-style-type: none;
 }
-.symbol {
-  margin-top: 20px;
-  padding: 0;
-}
-#shri {
-  opacity: 0;
-  transition: opacity 8s ease; /* Плавний перехід до повної видимості за 2 секунди */
-  margin: 36px auto;
-  padding: 0;
-  width: 26%;
-}
+
 ul {
   list-style-type: none;
   font-size: 18px;
@@ -176,40 +162,7 @@ ul {
 .media-box p {
   max-width: 400px;
 }
-.box {
-  background-color: #4e89ae;
-  color: #fff;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  font-size: 16px;
-  padding: 0 15px;
-  text-align: center;
-}
 
-.boxes-wrapper {
-  padding: 10px 0;
-  /* Забираємо жорстку фіксацію height */
-  min-height: 170px; /* мінімальна висота для десктопу */
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative; /* Тепер тримає позицію в потоці */
-  box-sizing: border-box;
-}
-
-.boxes-inner {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap; /* Дозволяє переносити бокси */
-  justify-content: center;
-  width: 100%;
-}
 .navigation-links {
   display: flex;
   justify-content: center;
@@ -366,27 +319,5 @@ nav li.active a {
   .outside-bg-top {
     width: 50%;
     vertical-align: middle;
-  }
-  #shri {
-    width: 60%;
-    margin-top: 20px;
-  }
-  .symbol {
-    width: 50%;
-  }
-  .heros p {
-    margin: 10px 10px;
-  }
-  .heros ul {
-    margin: 0 10px;
-  }
-  .box {
-    width: 100%;
-    max-width: 300px;
-    margin: 10px auto; /* Відступи і центрування */
-  }
-
-  .boxes-wrapper {
-    min-height: auto; /* Дозволяє займати місце за контентом */
   }
 }
